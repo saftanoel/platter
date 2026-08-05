@@ -247,31 +247,38 @@ enum SceneTextures {
 
             ctx.restoreGState()
 
-            // Label.
+            // Label. Kept near-black rather than paper cream: at this size the label is
+            // a sixth of the disc, and a light one read as a hole punched through the
+            // record instead of part of it. When there is artwork the sleeve *is* the
+            // label — it fills the circle rather than floating in the middle of one.
             let labelRect = ring(labelR)
             ctx.saveGState()
             ctx.addEllipse(in: labelRect)
             ctx.clip()
-            let paper = [
-                NSColor(calibratedRed: 0.97, green: 0.96, blue: 0.93, alpha: 1).cgColor,
-                NSColor(calibratedRed: 0.86, green: 0.84, blue: 0.79, alpha: 1).cgColor,
-            ] as CFArray
-            if let grad = CGGradient(colorsSpace: space, colors: paper, locations: [0, 1]) {
-                ctx.drawRadialGradient(grad, startCenter: CGPoint(x: c.x - labelR * 0.3, y: c.y + labelR * 0.3),
-                                       startRadius: 0, endCenter: c, endRadius: labelR * 1.25,
-                                       options: [.drawsAfterEndLocation])
+            if let art = artwork {
+                // Aspect-fill from the centre. Drawing the whole sleeve into a circular
+                // clip would squash anything non-square, and sleeve art is square often
+                // enough that a stretch is more obvious than a crop.
+                let s = art.size
+                let side = min(s.width, s.height)
+                let src = CGRect(x: (s.width - side) / 2, y: (s.height - side) / 2,
+                                 width: side, height: side)
+                art.draw(in: labelRect, from: src, operation: .sourceOver, fraction: 1)
+                // Print stock under the same light as the vinyl, not a lit screen.
+                ctx.setFillColor(NSColor(calibratedWhite: 0, alpha: 0.14).cgColor)
+                ctx.fill(labelRect)
+            } else {
+                let stock = [
+                    NSColor(calibratedRed: 0.125, green: 0.120, blue: 0.115, alpha: 1).cgColor,
+                    NSColor(calibratedRed: 0.042, green: 0.040, blue: 0.040, alpha: 1).cgColor,
+                ] as CFArray
+                if let grad = CGGradient(colorsSpace: space, colors: stock, locations: [0, 1]) {
+                    ctx.drawRadialGradient(grad, startCenter: CGPoint(x: c.x - labelR * 0.3, y: c.y + labelR * 0.3),
+                                           startRadius: 0, endCenter: c, endRadius: labelR * 1.25,
+                                           options: [.drawsAfterEndLocation])
+                }
             }
             ctx.restoreGState()
-
-            if let art = artwork {
-                let side = labelR * 2 * 0.62
-                let artRect = CGRect(x: c.x - side / 2, y: c.y - side / 2, width: side, height: side)
-                ctx.saveGState()
-                ctx.addRect(artRect)
-                ctx.clip()
-                art.draw(in: artRect, from: .zero, operation: .sourceOver, fraction: 1)
-                ctx.restoreGState()
-            }
 
             // The label sits a hair below the vinyl, so it gets a contact shadow.
             ctx.setLineWidth(max(1, d * 0.003))

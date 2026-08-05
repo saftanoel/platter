@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0222EEE1CA797D504928BC60 /* SceneTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7B85EA898BA358B4D13BE4 /* SceneTextures.swift */; };
+		03A1EA6F4CB82DC7D32414A9 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690F579676BCB1E3A442CEB /* ControlPanelView.swift */; };
+		0ED6B7A29C807FCC6F899CB5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6307CF5ED7A2BB8CA73A9BA9 /* main.swift */; };
+		2E408382A374ED47A6C5A5B4 /* SpinningRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509FBFAC2FC25426BD99F347 /* SpinningRecordView.swift */; };
+		368D33AC3D9DCEDE3989AD25 /* DesktopSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616654ED6395F49E8331C7F /* DesktopSceneView.swift */; };
+		3E39874B546DEA008D4543B5 /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16423E0233E0CFFA05A9AD1 /* NowPlaying.swift */; };
+		495F5D566B80B6332A0AC6B4 /* ScenePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2F50FFB0A2D69682B9AF0 /* ScenePalette.swift */; };
+		4D92051924040D66882B6761 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 80425EB95AEBBADFEF6320D2 /* AppIcon.icns */; };
+		4FA32FD06EE92E8D7A7E4959 /* DesktopWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BAC40EFEC97A993572CA0 /* DesktopWindowController.swift */; };
+		5CED13F395A6AF5660DA4FD0 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6690F579676BCB1E3A442CEB /* ControlPanelView.swift */; };
+		7CE3080316F35545B9ADD4E8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8762092FB3BD238FE7F07 /* Settings.swift */; };
+		A3E66CB96BF4C1E579286110 /* SceneTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7B85EA898BA358B4D13BE4 /* SceneTextures.swift */; };
+		A7BD4109CCC49FBD572CCC6D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B154238C46BD98E32B4CA /* main.swift */; };
+		AA631B919AC47EBAA9D55799 /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16423E0233E0CFFA05A9AD1 /* NowPlaying.swift */; };
+		B25B2DC9F215FD1F58BE8171 /* DesktopWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4BAC40EFEC97A993572CA0 /* DesktopWindowController.swift */; };
+		D881B6F39AAE6F44E244D640 /* ScenePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2F50FFB0A2D69682B9AF0 /* ScenePalette.swift */; };
+		EC0F5AC25FC8A6C24C76EAAF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8762092FB3BD238FE7F07 /* Settings.swift */; };
+		ED38DB2060D3EAFFCAFAA4E4 /* SpinningRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509FBFAC2FC25426BD99F347 /* SpinningRecordView.swift */; };
+		FF5A15A688CC89ED19741F63 /* DesktopSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1616654ED6395F49E8331C7F /* DesktopSceneView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1616654ED6395F49E8331C7F /* DesktopSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopSceneView.swift; sourceTree = "<group>"; };
+		16A8762092FB3BD238FE7F07 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		2B613D8ECE226FBC3B42B0CE /* Platter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		509FBFAC2FC25426BD99F347 /* SpinningRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinningRecordView.swift; sourceTree = "<group>"; };
+		6307CF5ED7A2BB8CA73A9BA9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6690F579676BCB1E3A442CEB /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
+		6B4BAC40EFEC97A993572CA0 /* DesktopWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopWindowController.swift; sourceTree = "<group>"; };
+		6D5B154238C46BD98E32B4CA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6D8EDB253BF31C58023E55FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6E7B85EA898BA358B4D13BE4 /* SceneTextures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTextures.swift; sourceTree = "<group>"; };
+		80425EB95AEBBADFEF6320D2 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		B16423E0233E0CFFA05A9AD1 /* NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlaying.swift; sourceTree = "<group>"; };
+		D08F909CC048619E737A0178 /* RenderHarness */ = {isa = PBXFileReference; includeInIndex = 0; path = RenderHarness; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F2F50FFB0A2D69682B9AF0 /* ScenePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePalette.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		32582D9A5D00D543D06B0EAA /* RenderHarness */ = {
+			isa = PBXGroup;
+			children = (
+				6307CF5ED7A2BB8CA73A9BA9 /* main.swift */,
+			);
+			name = RenderHarness;
+			path = Sources/RenderHarness;
+			sourceTree = "<group>";
+		};
+		5BC59274B653FA49E070890E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B613D8ECE226FBC3B42B0CE /* Platter.app */,
+				D08F909CC048619E737A0178 /* RenderHarness */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7865879AE796A1B09C0EB5A5 = {
+			isa = PBXGroup;
+			children = (
+				B9C1EA7BDDEA71628F6BF64D /* Platter */,
+				32582D9A5D00D543D06B0EAA /* RenderHarness */,
+				FB14C376D2F502E74B0215E4 /* Resources */,
+				5BC59274B653FA49E070890E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9C1EA7BDDEA71628F6BF64D /* Platter */ = {
+			isa = PBXGroup;
+			children = (
+				6690F579676BCB1E3A442CEB /* ControlPanelView.swift */,
+				1616654ED6395F49E8331C7F /* DesktopSceneView.swift */,
+				6B4BAC40EFEC97A993572CA0 /* DesktopWindowController.swift */,
+				6D8EDB253BF31C58023E55FE /* Info.plist */,
+				6D5B154238C46BD98E32B4CA /* main.swift */,
+				B16423E0233E0CFFA05A9AD1 /* NowPlaying.swift */,
+				E8F2F50FFB0A2D69682B9AF0 /* ScenePalette.swift */,
+				6E7B85EA898BA358B4D13BE4 /* SceneTextures.swift */,
+				16A8762092FB3BD238FE7F07 /* Settings.swift */,
+				509FBFAC2FC25426BD99F347 /* SpinningRecordView.swift */,
+			);
+			name = Platter;
+			path = Sources/Platter;
+			sourceTree = "<group>";
+		};
+		FB14C376D2F502E74B0215E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80425EB95AEBBADFEF6320D2 /* AppIcon.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A29C87BEB6D71343EDDAD0D /* Platter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACDC08456A84EACB004F6F04 /* Build configuration list for PBXNativeTarget "Platter" */;
+			buildPhases = (
+				B22AF8236829E3637DA7391C /* Sources */,
+				3108249BFB4E8D962E189764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Platter;
+			packageProductDependencies = (
+			);
+			productName = Platter;
+			productReference = 2B613D8ECE226FBC3B42B0CE /* Platter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE0944944A79C235D102963F /* RenderHarness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ECB3426C4774C32B17FF48A /* Build configuration list for PBXNativeTarget "RenderHarness" */;
+			buildPhases = (
+				6D571147F1B8AF5E3D20CFCC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenderHarness;
+			packageProductDependencies = (
+			);
+			productName = RenderHarness;
+			productReference = D08F909CC048619E737A0178 /* RenderHarness */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6307A46B043BEAF658E86D83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5A29C87BEB6D71343EDDAD0D = {
+						ProvisioningStyle = Manual;
+					};
+					CE0944944A79C235D102963F = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 0FE1520DCDB49FFAC46ADFE4 /* Build configuration list for PBXProject "Platter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7865879AE796A1B09C0EB5A5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5BC59274B653FA49E070890E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A29C87BEB6D71343EDDAD0D /* Platter */,
+				CE0944944A79C235D102963F /* RenderHarness */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3108249BFB4E8D962E189764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D92051924040D66882B6761 /* AppIcon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D571147F1B8AF5E3D20CFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CED13F395A6AF5660DA4FD0 /* ControlPanelView.swift in Sources */,
+				368D33AC3D9DCEDE3989AD25 /* DesktopSceneView.swift in Sources */,
+				4FA32FD06EE92E8D7A7E4959 /* DesktopWindowController.swift in Sources */,
+				3E39874B546DEA008D4543B5 /* NowPlaying.swift in Sources */,
+				495F5D566B80B6332A0AC6B4 /* ScenePalette.swift in Sources */,
+				0222EEE1CA797D504928BC60 /* SceneTextures.swift in Sources */,
+				7CE3080316F35545B9ADD4E8 /* Settings.swift in Sources */,
+				2E408382A374ED47A6C5A5B4 /* SpinningRecordView.swift in Sources */,
+				0ED6B7A29C807FCC6F899CB5 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22AF8236829E3637DA7391C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A1EA6F4CB82DC7D32414A9 /* ControlPanelView.swift in Sources */,
+				FF5A15A688CC89ED19741F63 /* DesktopSceneView.swift in Sources */,
+				B25B2DC9F215FD1F58BE8171 /* DesktopWindowController.swift in Sources */,
+				AA631B919AC47EBAA9D55799 /* NowPlaying.swift in Sources */,
+				D881B6F39AAE6F44E244D640 /* ScenePalette.swift in Sources */,
+				A3E66CB96BF4C1E579286110 /* SceneTextures.swift in Sources */,
+				EC0F5AC25FC8A6C24C76EAAF /* Settings.swift in Sources */,
+				ED38DB2060D3EAFFCAFAA4E4 /* SpinningRecordView.swift in Sources */,
+				A7BD4109CCC49FBD572CCC6D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		005A9FF500D332E682FB53EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sources/Platter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.platter.renderharness;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HARNESS";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		39F5C51CD51B1ABB439C6EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Platter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.platter;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		689BC84B20344CFF0B63023D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BBB8DAB55CB9E450BE2B9155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sources/Platter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.platter.renderharness;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HARNESS";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D226D4DE4075196E83CEFC44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/Platter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.platter;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D830F5E8712967307A1E6F33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FE1520DCDB49FFAC46ADFE4 /* Build configuration list for PBXProject "Platter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D830F5E8712967307A1E6F33 /* Debug */,
+				689BC84B20344CFF0B63023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9ECB3426C4774C32B17FF48A /* Build configuration list for PBXNativeTarget "RenderHarness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBB8DAB55CB9E450BE2B9155 /* Debug */,
+				005A9FF500D332E682FB53EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ACDC08456A84EACB004F6F04 /* Build configuration list for PBXNativeTarget "Platter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F5C51CD51B1ABB439C6EB3 /* Debug */,
+				D226D4DE4075196E83CEFC44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6307A46B043BEAF658E86D83 /* Project object */;
+}

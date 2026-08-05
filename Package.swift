@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "VinylMac",
+    name: "Platter",
     platforms: [.macOS(.v14)],
     targets: [
         .executableTarget(
-            name: "VinylMac",
-            path: "Sources/VinylMac"
+            name: "Platter",
+            path: "Sources/Platter"
         )
     ]
 )

@@ -21,7 +21,7 @@ struct Track: Equatable {
 }
 
 /// Polls Music.app and Spotify over AppleScript for now-playing metadata.
-/// Neither app requires login for this — matches how the original Vinyl app works.
+/// Neither app requires login for this — matches how the original vinylformac.com app works.
 ///
 /// Performance notes: the scripts are compiled once and reused (recompiling per poll
 /// dominated CPU), app-running checks go through the bundle-identifier lookup rather

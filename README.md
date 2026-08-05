@@ -1,10 +1,10 @@
-# Vinyl
+# Platter
 
 A macOS app that draws a photorealistic spinning turntable as a live desktop layer — pinned above
 your desktop picture, below your icons — showing the album art of whatever you're playing, on the
 record and on the sleeve beside it.
 
-![Vinyl running on the desktop](docs/hero.png)
+![Platter running on the desktop](docs/hero.png)
 
 Inspired by [vinylformac.com](https://vinylformac.com), written from scratch.
 
@@ -35,12 +35,12 @@ brew install xcodegen
 ```
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/vinyl-mac.git && cd vinyl-mac && ./scripts/build.sh
+git clone https://github.com/k3shavgupta/platter.git && cd platter && ./scripts/build.sh
 ```
 
-That builds Release, installs to `/Applications/Vinyl.app` and launches it. macOS will then ask
+That builds Release, installs to `/Applications/Platter.app` and launches it. macOS will then ask
 for permission to control Spotify and Music — that's how now-playing information is read, and
-Vinyl can't show anything without it.
+Platter can't show anything without it.
 
 ### Why there's no download
 
@@ -50,9 +50,9 @@ small free thing and that isn't worth it, so it ships as source. The build is on
 
 ## Settings
 
-Vinyl has no Dock icon. It installs a menu bar item — but **if your menu bar is already full,
+Platter has no Dock icon. It installs a menu bar item — but **if your menu bar is already full,
 macOS parks that item off-screen**, which is a macOS limitation rather than something the app can
-fix. Either way, you can always open the control panel by **double-clicking Vinyl in your
+fix. Either way, you can always open the control panel by **double-clicking Platter in your
 Applications folder**.
 
 It offers the backdrop style and whether to launch at login.

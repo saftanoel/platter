@@ -17,7 +17,7 @@ xcodegen generate
 
 echo "==> Building RenderHarness (Debug)"
 xcodebuild \
-    -project VinylMac.xcodeproj \
+    -project Platter.xcodeproj \
     -scheme RenderHarness \
     -configuration Debug \
     -derivedDataPath build/DerivedData \

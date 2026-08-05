@@ -16,16 +16,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         desktopController = DesktopWindowController(poller: poller, settings: settings)
 
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        let icon = NSImage(systemSymbolName: "opticaldisc", accessibilityDescription: "Vinyl")
+        let icon = NSImage(systemSymbolName: "opticaldisc", accessibilityDescription: "Platter")
         icon?.isTemplate = true
         statusItem.button?.image = icon
-        statusItem.button?.toolTip = "Vinyl"
+        statusItem.button?.toolTip = "Platter"
         statusItem.menu = buildMenu()
 
         poller.start()
     }
 
-    /// Re-opening Vinyl (double-clicking it in Finder or the Dock) surfaces the control
+    /// Re-opening Platter (double-clicking it in Finder or the Dock) surfaces the control
     /// panel. This is the reliable way in: on a crowded menu bar macOS parks the status
     /// item off-screen, leaving no other way to reach the settings.
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
@@ -63,7 +63,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             backing: .buffered,
             defer: false
         )
-        window.title = "Vinyl"
+        window.title = "Platter"
         window.contentView = NSHostingView(rootView: view)
         window.isReleasedWhenClosed = false
         window.center()
@@ -94,7 +94,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(settingsItem)
 
         menu.addItem(.separator())
-        menu.addItem(NSMenuItem(title: "Quit Vinyl", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem(title: "Quit Platter", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
         return menu
     }
 

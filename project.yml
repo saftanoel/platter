@@ -1,31 +1,31 @@
-name: VinylMac
+name: Platter
 options:
   bundleIdPrefix: com.keshav
   deploymentTarget:
     macOS: "14.0"
 targets:
-  VinylMac:
+  Platter:
     type: application
     platform: macOS
     sources:
-      - Sources/VinylMac
+      - Sources/Platter
       - path: Resources/AppIcon.icns
         buildPhase: resources
     info:
-      path: Sources/VinylMac/Info.plist
+      path: Sources/Platter/Info.plist
       properties:
         CFBundleShortVersionString: "$(MARKETING_VERSION)"
         CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
-        CFBundleName: Vinyl
-        CFBundleDisplayName: Vinyl
+        CFBundleName: Platter
+        CFBundleDisplayName: Platter
         CFBundleIconFile: AppIcon
         LSUIElement: true
         LSMinimumSystemVersion: "14.0"
         NSHighResolutionCapable: true
-        NSAppleEventsUsageDescription: "Vinyl reads now-playing info from Music and Spotify."
+        NSAppleEventsUsageDescription: "Platter reads now-playing info from Music and Spotify."
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.keshav.vinylmac
+        PRODUCT_BUNDLE_IDENTIFIER: com.keshav.platter
         MARKETING_VERSION: "1.3"
         CURRENT_PROJECT_VERSION: "4"
         SWIFT_VERSION: "5.0"
@@ -46,14 +46,14 @@ targets:
     type: tool
     platform: macOS
     sources:
-      - path: Sources/VinylMac
+      - path: Sources/Platter
         excludes:
           - main.swift
           - Info.plist
       - Sources/RenderHarness
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.keshav.vinylmac.renderharness
+        PRODUCT_BUNDLE_IDENTIFIER: com.keshav.platter.renderharness
         SWIFT_VERSION: "5.0"
         SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) HARNESS"
         CODE_SIGN_STYLE: Manual

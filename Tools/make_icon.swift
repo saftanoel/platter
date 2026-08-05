@@ -1,6 +1,6 @@
 import AppKit
 
-/// Renders the Vinyl app icon (a record on a cream plinth) at one size.
+/// Renders the Platter app icon (a record on a cream plinth) at one size.
 func drawIcon(size: CGFloat) -> NSImage {
     let image = NSImage(size: NSSize(width: size, height: size))
     image.lockFocus()

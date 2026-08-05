@@ -1,8 +1,8 @@
 import SwiftUI
 
-/// Settings surface for the app. Vinyl normally lives in the menu bar, but a full
+/// Settings surface for the app. Platter normally lives in the menu bar, but a full
 /// menu bar can leave the status item with nowhere to go, so this panel is also
-/// reachable by re-opening Vinyl from Finder or the Dock.
+/// reachable by re-opening Platter from Finder or the Dock.
 struct ControlPanelView: View {
     @ObservedObject var settings: Settings
     @State var showOnDesktop: Bool
@@ -42,7 +42,7 @@ struct ControlPanelView: View {
                 .onChange(of: launchAtLogin) { _, value in onToggleLogin(value) }
                 .padding(.top, 12)
 
-            Text("Vinyl reads the current track from Spotify or Music. No login needed.")
+            Text("Platter reads the current track from Spotify or Music. No login needed.")
                 .font(.caption)
                 .foregroundStyle(.secondary)
                 .padding(.top, 2)
@@ -51,7 +51,7 @@ struct ControlPanelView: View {
 
             HStack {
                 Spacer()
-                Button("Quit Vinyl", role: .destructive, action: onQuit)
+                Button("Quit Platter", role: .destructive, action: onQuit)
                     .keyboardShortcut("q")
             }
         }
@@ -66,7 +66,7 @@ struct ControlPanelView: View {
                 .font(.system(size: 30))
                 .foregroundStyle(.primary)
             VStack(alignment: .leading, spacing: 2) {
-                Text("Vinyl").font(.title2.weight(.semibold))
+                Text("Platter").font(.title2.weight(.semibold))
                 Text(versionString).font(.caption).foregroundStyle(.secondary)
             }
         }

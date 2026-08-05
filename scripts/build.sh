@@ -1,5 +1,5 @@
 #!/bin/bash
-# Builds Vinyl and installs it to /Applications.
+# Builds Platter and installs it to /Applications.
 #
 # Requires full Xcode, not just the Command Line Tools — SwiftPM's manifest
 # compiler is broken under CLT alone and xcodegen/xcodebuild will fail with
@@ -18,32 +18,32 @@ xcodegen generate
 
 echo "==> Building (Release)"
 xcodebuild \
-    -project VinylMac.xcodeproj \
-    -scheme VinylMac \
+    -project Platter.xcodeproj \
+    -scheme Platter \
     -configuration Release \
     -derivedDataPath build/DerivedData \
     build
 
-APP=build/DerivedData/Build/Products/Release/VinylMac.app
+APP=build/DerivedData/Build/Products/Release/Platter.app
 if [ ! -d "$APP" ]; then
     echo "Build succeeded but $APP not found." >&2
     exit 1
 fi
 
-echo "==> Installing to /Applications/Vinyl.app"
+echo "==> Installing to /Applications/Platter.app"
 # Quit the running instance first, if any, so the copy isn't fighting a live app,
-# then relaunch afterwards — otherwise the desktop is left without Vinyl running.
+# then relaunch afterwards — otherwise the desktop is left without Platter running.
 WAS_RUNNING=""
-if pgrep -f /Applications/Vinyl.app/Contents/MacOS/VinylMac >/dev/null 2>&1; then
+if pgrep -f /Applications/Platter.app/Contents/MacOS/Platter >/dev/null 2>&1; then
     WAS_RUNNING=1
-    osascript -e 'tell application "Vinyl" to quit' 2>/dev/null || true
+    osascript -e 'tell application "Platter" to quit' 2>/dev/null || true
 fi
-rm -rf /Applications/Vinyl.app
-cp -R "$APP" /Applications/Vinyl.app
+rm -rf /Applications/Platter.app
+cp -R "$APP" /Applications/Platter.app
 
 if [ -n "$WAS_RUNNING" ]; then
     echo "==> Relaunching"
-    open -a /Applications/Vinyl.app
+    open -a /Applications/Platter.app
 fi
 
 echo "==> Done."

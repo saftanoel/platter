@@ -8,11 +8,9 @@
 # Stripe KYC, PAN and a bank account before the profile goes live.
 # github: [k3shavgupta]
 
-# One-off tips rather than recurring sponsorship. Both pay out to India, but
-# through PayPal/Stripe, so check what each does with an Indian account before
-# committing to one.
+buy_me_a_coffee: keshavgupta
+
 # ko_fi: k3shavgupta
-# buy_me_a_coffee: k3shavgupta
 
 # Up to four arbitrary URLs — a personal donate page, UPI link, anything.
 # custom: ["https://example.com/donate"]

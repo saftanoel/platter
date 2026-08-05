@@ -90,6 +90,11 @@ Working, and in daily use. Known rough edges:
 - Memory sits around 25 MB above baseline — traded deliberately for near-zero idle CPU.
 - The menu bar item may have nowhere to go, as above.
 
+## Support
+
+Platter is free and always will be. If it's brightened up your desktop and you'd like to say
+thanks, you can [buy me a coffee](https://buymeacoffee.com/keshavgupta).
+
 ## Licence
 
 MIT — see [LICENSE](LICENSE).

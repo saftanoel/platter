@@ -11,6 +11,18 @@ final class DesktopWindowController {
     private let settings: Settings
     private var screenObserver: NSObjectProtocol?
 
+    /// The user's on/off choice, independent of window state. `isVisible` used to read
+    /// this back off `windows.first?.isVisible` — which meant any screen-parameter change
+    /// silently re-showed the scene after the user had turned it off, because
+    /// rebuildWindows() always ended each fresh window with orderFront(nil), with nothing
+    /// remembering "off" across the rebuild.
+    private var desiredVisibility = true
+
+    /// The screen layout rebuildWindows() last built for, so a screen-parameter
+    /// notification that didn't actually change anything — Dock/menu-bar changes post
+    /// this too, not just monitor changes — doesn't tear down and recreate every window.
+    private var lastScreenFrames: [CGRect] = []
+
     init(poller: NowPlayingPoller, settings: Settings) {
         self.poller = poller
         self.settings = settings
@@ -18,17 +30,25 @@ final class DesktopWindowController {
         screenObserver = NotificationCenter.default.addObserver(
             forName: NSApplication.didChangeScreenParametersNotification,
             object: nil, queue: .main
-        ) { [weak self] _ in self?.rebuildWindows() }
+        ) { [weak self] _ in self?.rebuildWindowsIfScreensChanged() }
     }
 
-    var isVisible: Bool { windows.first?.isVisible ?? false }
+    var isVisible: Bool { desiredVisibility }
 
     func setVisible(_ visible: Bool) {
+        desiredVisibility = visible
         windows.forEach { visible ? $0.orderFront(nil) : $0.orderOut(nil) }
     }
 
+    private func rebuildWindowsIfScreensChanged() {
+        let frames = NSScreen.screens.map(\.frame)
+        guard frames != lastScreenFrames else { return }
+        rebuildWindows()
+    }
+
     private func rebuildWindows() {
-        windows.forEach { $0.orderOut(nil) }
+        windows.forEach { $0.close() }
+        lastScreenFrames = NSScreen.screens.map(\.frame)
         windows = NSScreen.screens.map { makeWindow(for: $0) }
     }
 
@@ -52,7 +72,7 @@ final class DesktopWindowController {
         hosting.autoresizingMask = [.width, .height]
         window.contentView = hosting
         window.setFrame(screen.frame, display: true)
-        window.orderFront(nil)
+        if desiredVisibility { window.orderFront(nil) }
         return window
     }
 }

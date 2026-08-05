@@ -1,0 +1,43 @@
+name: VinylMac
+options:
+  bundleIdPrefix: com.keshav
+  deploymentTarget:
+    macOS: "14.0"
+targets:
+  VinylMac:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/VinylMac
+      - path: Resources/AppIcon.icns
+        buildPhase: resources
+    info:
+      path: Sources/VinylMac/Info.plist
+      properties:
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        CFBundleName: Vinyl
+        CFBundleDisplayName: Vinyl
+        CFBundleIconFile: AppIcon
+        LSUIElement: true
+        LSMinimumSystemVersion: "14.0"
+        NSHighResolutionCapable: true
+        NSAppleEventsUsageDescription: "Vinyl reads now-playing info from Music and Spotify."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.keshav.vinylmac
+        MARKETING_VERSION: "1.3"
+        CURRENT_PROJECT_VERSION: "4"
+        SWIFT_VERSION: "5.0"
+        GENERATE_INFOPLIST_FILE: false
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGNING_REQUIRED: YES
+        CODE_SIGNING_ALLOWED: YES
+      configs:
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: "-O"
+          SWIFT_COMPILATION_MODE: wholemodule
+          ENABLE_TESTABILITY: NO
+          DEBUG_INFORMATION_FORMAT: dwarf-with-dsym

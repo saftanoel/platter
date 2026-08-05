@@ -1,10 +1,10 @@
 # Puts a "Sponsor" button at the top of the repo.
 #
-# Every line below is commented out on purpose: a funding link pointing at an
-# account that doesn't exist yet renders a button that 404s, which is worse than
-# no button. Uncomment a line once that account is actually live.
+# Only uncomment a line once that account is actually live — a funding link
+# pointing at a profile that doesn't exist renders a button that 404s, which is
+# worse than having no button at all.
 #
-# GitHub Sponsors — enrol first at https://github.com/sponsors, which needs
+# GitHub Sponsors would need enrolling at https://github.com/sponsors first:
 # Stripe KYC, PAN and a bank account before the profile goes live.
 # github: [k3shavgupta]
 

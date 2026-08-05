@@ -5,3 +5,4 @@ releases/
 renders/
 *.xcodeproj/xcuserdata/
 .DS_Store
+VinylMac.xcodeproj/

@@ -12,8 +12,17 @@
 		1AC57A51D5476F14823391AC /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CA700ED002DDDC6141B17 /* ControlPanelView.swift */; };
 		3222362877464D0B5F60B762 /* DesktopWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB88995B4514214666D9D06 /* DesktopWindowController.swift */; };
 		41CEE632521757BA1D25975B /* ScenePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05394610CD45AEEB16C92C9D /* ScenePalette.swift */; };
+		446A881081B86FE1D2C06E3D /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD567438D00731EC8A2CEA0C /* NowPlaying.swift */; };
 		599ABACA6C9B8442EBF03AB0 /* SpinningRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9EE434CF6D6F7EA850E74C /* SpinningRecordView.swift */; };
+		59E2849BBBACDD887ADF030B /* DesktopSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E17B11B4121F701DA50847 /* DesktopSceneView.swift */; };
+		63E794954A564EDF1F9F8DFE /* SceneTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7288EFEA85C8864081A6D64 /* SceneTextures.swift */; };
+		6649B5A4721FABA05AF14912 /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CA700ED002DDDC6141B17 /* ControlPanelView.swift */; };
+		6DBCDFC69B007F45326DEF30 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3D158F0C36F814C97E8AB /* Settings.swift */; };
 		8779BEFD9C40480DA4EF5F1D /* SceneTextures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7288EFEA85C8864081A6D64 /* SceneTextures.swift */; };
+		920B2A5CED0B83A255B7D2DD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4721A4038FEFE266C3D504BA /* main.swift */; };
+		96D0FCC7C8406452D806F038 /* SpinningRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9EE434CF6D6F7EA850E74C /* SpinningRecordView.swift */; };
+		9DA72C851937FED32EE8C2B1 /* DesktopWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB88995B4514214666D9D06 /* DesktopWindowController.swift */; };
+		BB65E0A0C8EECB3EBFB8E273 /* ScenePalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05394610CD45AEEB16C92C9D /* ScenePalette.swift */; };
 		BEABDC8E158A2F426C7D5853 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B6F6A1CBEAB1A219AB9484B9 /* AppIcon.icns */; };
 		BFE1E118AC5386F34D0140D7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22159195885E07FB68FEE7DA /* main.swift */; };
 		C42C7BFAA773C6FFFF2ED721 /* DesktopSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E17B11B4121F701DA50847 /* DesktopSceneView.swift */; };
@@ -22,7 +31,9 @@
 /* Begin PBXFileReference section */
 		05394610CD45AEEB16C92C9D /* ScenePalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePalette.swift; sourceTree = "<group>"; };
 		22159195885E07FB68FEE7DA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2E7068D700781156D7776145 /* RenderHarness */ = {isa = PBXFileReference; includeInIndex = 0; path = RenderHarness; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA3D158F0C36F814C97E8AB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		4721A4038FEFE266C3D504BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6793A3473E21CB8271A9D508 /* VinylMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinylMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C7CA700ED002DDDC6141B17 /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
 		8CB88995B4514214666D9D06 /* DesktopWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopWindowController.swift; sourceTree = "<group>"; };
@@ -38,6 +49,7 @@
 		144504811D1A182B5A50FEBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				2E7068D700781156D7776145 /* RenderHarness */,
 				6793A3473E21CB8271A9D508 /* VinylMac.app */,
 			);
 			name = Products;
@@ -61,6 +73,15 @@
 			path = Sources/VinylMac;
 			sourceTree = "<group>";
 		};
+		5A34D1EC68A9EC2DC1CBE4D1 /* RenderHarness */ = {
+			isa = PBXGroup;
+			children = (
+				4721A4038FEFE266C3D504BA /* main.swift */,
+			);
+			name = RenderHarness;
+			path = Sources/RenderHarness;
+			sourceTree = "<group>";
+		};
 		6706BB4C4D7DE6922F055EA5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +93,7 @@
 		BCEEA9219997ACC97BBAC9A8 = {
 			isa = PBXGroup;
 			children = (
+				5A34D1EC68A9EC2DC1CBE4D1 /* RenderHarness */,
 				6706BB4C4D7DE6922F055EA5 /* Resources */,
 				2F76BDFBD9C8A4041CC2CB90 /* VinylMac */,
 				144504811D1A182B5A50FEBF /* Products */,
@@ -81,6 +103,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		199616ED7062E124AE6656B1 /* RenderHarness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851FA2E2053DFAB52FB92046 /* Build configuration list for PBXNativeTarget "RenderHarness" */;
+			buildPhases = (
+				D5A4F9DFD55205D0742AD88E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RenderHarness;
+			packageProductDependencies = (
+			);
+			productName = RenderHarness;
+			productReference = 2E7068D700781156D7776145 /* RenderHarness */;
+			productType = "com.apple.product-type.tool";
+		};
 		DAE412F63A187450EAF573F6 /* VinylMac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDFCA48BD103CC477CF013EA /* Build configuration list for PBXNativeTarget "VinylMac" */;
@@ -108,6 +147,9 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					199616ED7062E124AE6656B1 = {
+						ProvisioningStyle = Manual;
+					};
 					DAE412F63A187450EAF573F6 = {
 						ProvisioningStyle = Manual;
 					};
@@ -128,6 +170,7 @@
 			projectRoot = "";
 			targets = (
 				DAE412F63A187450EAF573F6 /* VinylMac */,
+				199616ED7062E124AE6656B1 /* RenderHarness */,
 			);
 		};
 /* End PBXProject section */
@@ -160,9 +203,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5A4F9DFD55205D0742AD88E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6649B5A4721FABA05AF14912 /* ControlPanelView.swift in Sources */,
+				59E2849BBBACDD887ADF030B /* DesktopSceneView.swift in Sources */,
+				9DA72C851937FED32EE8C2B1 /* DesktopWindowController.swift in Sources */,
+				446A881081B86FE1D2C06E3D /* NowPlaying.swift in Sources */,
+				BB65E0A0C8EECB3EBFB8E273 /* ScenePalette.swift in Sources */,
+				63E794954A564EDF1F9F8DFE /* SceneTextures.swift in Sources */,
+				6DBCDFC69B007F45326DEF30 /* Settings.swift in Sources */,
+				96D0FCC7C8406452D806F038 /* SpinningRecordView.swift in Sources */,
+				920B2A5CED0B83A255B7D2DD /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0609B04916D29ED1AFB53192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sources/VinylMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.vinylmac.renderharness;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HARNESS";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		A12777625C2DBF46BD163D23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -269,6 +346,24 @@
 			};
 			name = Debug;
 		};
+		EA60C77948DC304F997CB025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sources/VinylMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.vinylmac.renderharness;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) HARNESS";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
 		EAA17D8701001195363C2B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +435,15 @@
 			buildConfigurations = (
 				EAA17D8701001195363C2B88 /* Debug */,
 				AD125603FE095F47E5BAE472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		851FA2E2053DFAB52FB92046 /* Build configuration list for PBXNativeTarget "RenderHarness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA60C77948DC304F997CB025 /* Debug */,
+				0609B04916D29ED1AFB53192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

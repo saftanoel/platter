@@ -41,3 +41,20 @@ targets:
           SWIFT_COMPILATION_MODE: wholemodule
           ENABLE_TESTABILITY: NO
           DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+
+  RenderHarness:
+    type: tool
+    platform: macOS
+    sources:
+      - path: Sources/VinylMac
+        excludes:
+          - main.swift
+          - Info.plist
+      - Sources/RenderHarness
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.keshav.vinylmac.renderharness
+        SWIFT_VERSION: "5.0"
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: "$(inherited) HARNESS"
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "-"

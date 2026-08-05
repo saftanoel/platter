@@ -2,5 +2,6 @@
 .swiftpm/
 build/
 releases/
+renders/
 *.xcodeproj/xcuserdata/
 .DS_Store

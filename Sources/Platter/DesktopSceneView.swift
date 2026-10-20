@@ -43,13 +43,30 @@ struct DesktopSceneView: View {
 
     // MARK: - Backdrop
 
-    @ViewBuilder
-    private var backdrop: some View {
-        switch settings.backdrop {
-        case .albumTint: albumTint
-        case .mahogany: woodDesk
+        @ViewBuilder
+        private var backdrop: some View {
+            switch settings.backdrop {
+            case .albumTint: albumTint
+            case .mahogany: woodDesk
+            case .transparent: Color.clear
+            case .customColor: settings.customColor
+            case .customImage: customWallpaper
+            }
         }
-    }
+
+        private var customWallpaper: some View {
+            Group {
+                if let path = settings.customImagePath,
+                   let nsImage = NSImage(contentsOfFile: path) {
+                    Image(nsImage: nsImage)
+                        .resizable()
+                        .scaledToFill()
+                        .clipped()
+                } else {
+                    Color.black
+                }
+            }
+        }
 
     /// A flat wash taken from the current cover's background colour: no grain, no figure,
     /// nothing but a soft vertical fall-off, a bloom of the same hue behind the deck, and

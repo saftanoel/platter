@@ -14,6 +14,8 @@ enum BackdropStyle: String, CaseIterable, Identifiable {
     case customColor
     /// A custom image/wallpaper from disk.
     case customImage
+    
+    case waves
 
     var id: String { rawValue }
 
@@ -24,6 +26,7 @@ enum BackdropStyle: String, CaseIterable, Identifiable {
         case .transparent: return "None (Transparent)"
         case .customColor: return "Custom colour"
         case .customImage: return "Custom image"
+        case .waves: return "Animated waves"
         }
     }
 }

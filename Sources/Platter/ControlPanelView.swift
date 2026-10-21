@@ -101,6 +101,8 @@ struct ControlPanelView: View {
             return "Draws a solid background in your chosen color."
         case .customImage:
             return "Draws your chosen wallpaper image behind the vinyl."
+        case .waves:
+            return "Renders smooth, fluid animated waves tinted with the current album palette."
         }
     }
 
